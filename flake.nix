@@ -37,6 +37,7 @@
               poetry
               alejandra
               checkov
+              terraform-ls
             ];
             shellHook = ''
               pre-commit install --install-hooks
