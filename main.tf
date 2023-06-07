@@ -32,6 +32,7 @@ resource "aws_route53_record" "migadu_MX" {
   ]
 }
 
+#TODO: This produces an unnecessary 0 record
 resource "aws_route53_record" "migadu_domainkeys_CNAME" {
   count   = 4
   zone_id = data.aws_route53_zone.migadu.zone_id
