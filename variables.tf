@@ -13,3 +13,8 @@ variable "ttl" {
   type        = number
   default     = 3600
 }
+variable "merge_apex_text_records" {
+  description = "Whether or not to merge with existing apex domain TXT entries"
+  type        = bool
+  default     = true
+}

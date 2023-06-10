@@ -11,7 +11,8 @@ locals {
     "hosted-email-verify=${var.migadu_domain_verification_id}",
     "v=spf1 include:spf.migadu.com -all",
   ]
-  apex_txt_records = distinct(concat(data.dns_txt_record_set.existing_apex_records.records, local.apex_migadu_txt_records))
+
+  apex_txt_records = distinct(concat(var.merge_apex_text_records ? data.dns_txt_record_set.existing_apex_records.records : [], local.apex_migadu_txt_records))
 }
 resource "aws_route53_record" "migadu_TXT" {
   zone_id = data.aws_route53_zone.migadu.zone_id
