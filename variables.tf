@@ -7,3 +7,9 @@ variable "migadu_domain_verification_id" {
   description = "Unique identifier for verifying your domain with Migadu e.g. wve23ado"
   type        = string
 }
+
+variable "ttl" {
+  description = "Time to live in seconds for the records"
+  type        = number
+  default     = 3600
+}
