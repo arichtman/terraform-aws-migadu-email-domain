@@ -15,11 +15,12 @@ locals {
   apex_txt_records = distinct(concat(var.merge_apex_text_records ? data.dns_txt_record_set.existing_apex_records.records : [], local.apex_migadu_txt_records))
 }
 resource "aws_route53_record" "migadu_TXT" {
-  zone_id = data.aws_route53_zone.migadu.zone_id
-  name    = var.route53_zone_name
-  type    = "TXT"
-  ttl     = 3600
-  records = local.apex_txt_records
+  zone_id         = data.aws_route53_zone.migadu.zone_id
+  name            = var.route53_zone_name
+  type            = "TXT"
+  ttl             = 3600
+  records         = local.apex_txt_records
+  allow_overwrite = true
 }
 
 resource "aws_route53_record" "migadu_MX" {
