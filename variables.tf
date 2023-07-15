@@ -1,5 +1,5 @@
 variable "route53_zone_name" {
-  description = "Name of the Route53 public hosted zone, usually the TLD FQDN e.g. richtman.com.au"
+  description = "Name of the Route53 public hosted zone, usually the FQDN e.g. richtman.com.au"
   type        = string
 }
 

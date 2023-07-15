@@ -41,7 +41,6 @@
             ];
             shellHook = ''
               pre-commit install --install-hooks
-              source <$(terraform-docs completion bash)
             '';
           };
       }

@@ -41,7 +41,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_merge_apex_text_records"></a> [merge\_apex\_text\_records](#input\_merge\_apex\_text\_records) | Whether or not to merge with existing apex domain TXT entries | `bool` | `true` | no |
 | <a name="input_migadu_domain_verification_id"></a> [migadu\_domain\_verification\_id](#input\_migadu\_domain\_verification\_id) | Unique identifier for verifying your domain with Migadu e.g. wve23ado | `string` | n/a | yes |
-| <a name="input_route53_zone_name"></a> [route53\_zone\_name](#input\_route53\_zone\_name) | Name of the Route53 public hosted zone, usually the TLD FQDN e.g. richtman.com.au | `string` | n/a | yes |
+| <a name="input_route53_zone_name"></a> [route53\_zone\_name](#input\_route53\_zone\_name) | Name of the Route53 public hosted zone, usually the FQDN e.g. richtman.com.au | `string` | n/a | yes |
 | <a name="input_ttl"></a> [ttl](#input\_ttl) | Time to live in seconds for the records | `number` | `3600` | no |
 
 ## Outputs
