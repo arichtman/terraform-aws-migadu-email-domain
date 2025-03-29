@@ -13,13 +13,14 @@ repos:
   - id: check-yaml
   - id: end-of-file-fixer
   - id: trailing-whitespace
+  - id: detect-aws-credentials
+    args: [ "--allow-missing-credentials" ]
   - id: check-case-conflict
   - id: check-executables-have-shebangs
   - id: check-shebang-scripts-are-executable
   - id: check-toml
   - id: check-vcs-permalinks
   - id: check-yaml
-  - id: detect-aws-credentials
   - id: end-of-file-fixer
   - id: mixed-line-ending
   - id: check-json

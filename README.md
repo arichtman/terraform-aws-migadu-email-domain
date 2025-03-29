@@ -5,14 +5,17 @@ Terraform module for Route53 records to enable a Migadu email domain
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5 |
+| <a name="requirement_dns"></a> [dns](#requirement\_dns) | >= 3 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.67.0 |
-| <a name="provider_dns"></a> [dns](#provider\_dns) | 3.3.2 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.93.0 |
+| <a name="provider_dns"></a> [dns](#provider\_dns) | 3.4.2 |
 
 ## Modules
 
